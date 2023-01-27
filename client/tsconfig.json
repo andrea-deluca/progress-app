@@ -10,6 +10,19 @@
     "jsxImportSource": "solid-js",
     "types": ["vite/client"],
     "noEmit": true,
-    "isolatedModules": true
-  }
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@components": ["src/components"],
+      "@components/*": ["src/components/*"],
+      "@hooks": ["src/hooks"],
+      "@contexts": ["src/contexts"],
+      "@configs": ["src/configs"],
+      "@configs/*": ["src/configs/*"],
+      "@validations": ["src/lib/validations"],
+      "@utils/*": ["src/lib/utils/*"],
+      "@layouts": ["src/layouts"]
+    },
+  } 
 }
